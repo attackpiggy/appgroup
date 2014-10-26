@@ -1,31 +1,15 @@
 appgroup
 ========
 
-Carleton App Group
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      #map_canvas {
-        width: 1000px;
-        height: 1400px;
-      }
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script>
-      function initialize() {
-        var map_canvas = document.getElementById('map_canvas');
-        var map_options = {
-          center: new google.maps.LatLng(45.387581, -75.696020),
-          zoom: 17,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(map_canvas, map_options)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-  </head>
-  <body>
-    <div id="map_canvas"></div>
-  </body>
-</html>
+This repository has been forked from LukeM12/appgroup
+
+
+Appgroup was established in December 2013. It's aim was to create apps for
+Carleton University. One of the apps that was proposed and was accepted
+by the university was a university map web app.
+
+It consisted of a mini-google map which finds the shortest path from GPS
+user location to the given destination. It has two options: outside or 
+internal inter-building paths.
+
+The website is: carletonmap.com
